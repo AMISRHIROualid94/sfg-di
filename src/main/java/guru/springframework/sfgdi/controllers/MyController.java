@@ -11,8 +11,6 @@ public class MyController {
     public MyController(GreetingService greetingService) {
         this.greetingService = greetingService;
     }
-
-
     public String sayHello(){
         return greetingService.sayGreeting();
     }
