@@ -6,17 +6,16 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 
 @Controller
-public class SetterInjectedController {
-
+public class GetterInjectedController {
     private GreetingService greetingService;
 
-    @Qualifier("setterInjectedGreetingService")
     @Autowired
-    public void setGreetingService(GreetingService greetingService) {
+    @Qualifier("getterGreetingService")
+    public void setGreetingService(GreetingService greetingService){
         this.greetingService = greetingService;
     }
 
-    public String getGreeting(){
+    public String SayHello(){
         return greetingService.sayGreeting();
     }
 }
