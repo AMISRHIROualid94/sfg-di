@@ -9,6 +9,7 @@ public class PrimaryGreetingService implements GreetingService{
 
     private GreetingRepository greetingRepository;
     public PrimaryGreetingService(GreetingRepository greetingRepository) {
+       This.greetingRepository = greetingRepository;
     }
 
     @Override
