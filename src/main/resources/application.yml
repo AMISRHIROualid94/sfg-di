@@ -1,0 +1,11 @@
+guru:
+  jms:
+    username : Rabab
+    password : somejmsPassword
+    url : somejmsPassword
+---
+spring:
+  profiles: de
+guru:
+  jms:
+    username : Rabab $$$$$$$$ german
